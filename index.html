@@ -11,7 +11,8 @@
   <header>
     <div class="header-inner">
       <h1>💻 CompE Guide</h1>
-      <nav>
+      <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav">
         <a href="#me">Me</a>
         <a href="#organizations">Orgs</a>
         <a href="#projects">Projects</a>
@@ -21,6 +22,7 @@
         <a href="#tools">Tools</a>
         <a href="#certs">Certs</a>
         <a href="#tips">Tips</a>
+        <a href="#converter">Converter</a>
         <a href="#search">Search</a>
         <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
@@ -100,17 +102,46 @@
       <div class="card-grid" id="tip-list"></div>
     </section>
 
+        <section id="converter">
+      <h2>🔢 Number Base Converter</h2>
+      <p class="note">Type a whole number into any box and the others update instantly. Try 255 in decimal, 1010 in binary, or FF in hex.</p>
+      <div class="converter-grid">
+        <div class="converter-field">
+          <label for="conv-decimal">Decimal (base 10)</label>
+          <input type="text" id="conv-decimal" placeholder="e.g. 255" autocomplete="off">
+        </div>
+        <div class="converter-field">
+          <label for="conv-binary">Binary (base 2)</label>
+          <input type="text" id="conv-binary" placeholder="e.g. 11111111" autocomplete="off">
+        </div>
+        <div class="converter-field">
+          <label for="conv-hex">Hexadecimal (base 16)</label>
+          <input type="text" id="conv-hex" placeholder="e.g. FF" autocomplete="off">
+        </div>
+        <div class="converter-field">
+          <label for="conv-octal">Octal (base 8)</label>
+          <input type="text" id="conv-octal" placeholder="e.g. 377" autocomplete="off">
+        </div>
+      </div>
+      <p class="converter-msg" id="converter-msg"></p>
+      <button class="btn-small" id="converter-clear">Clear</button>
+    </section>
+
     <section id="search">
       <h2>Search Computer Engineering</h2>
       <input type="text" id="search-box" placeholder="Try: python, arduino, cisco, roadmap, notes...">
+      <div class="tabs" id="search-filters"></div>
+      <p class="result-count" id="result-count"></p>
       <div id="search-results"></div>
     </section>
   </main>
 
   <footer>
-    <p>Built by a first-year Computer Engineering student</p>
+    <p>Built by a first-year Computer Engineering student ^_^</p>
   </footer>
 
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">⬆️</button>
+  
   <script src="js/data.js"></script>
   <script src="js/script.js"></script>
 </body>

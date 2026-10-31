@@ -12,9 +12,15 @@
     <div class="header-inner">
       <h1>💻 CompE Guide</h1>
       <nav>
-        <a href="#about">About</a>
+        <a href="#me">Me</a>
+        <a href="#organizations">Orgs</a>
+        <a href="#projects">Projects</a>
         <a href="#subjects">Subjects</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#careers">Careers</a>
+        <a href="#tools">Tools</a>
+        <a href="#certs">Certs</a>
+        <a href="#tips">Tips</a>
         <a href="#search">Search</a>
         <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
@@ -47,10 +53,30 @@
       </p>
     </section>
 
+        <section id="me">
+      <h2>👤 About Me</h2>
+      <div id="profile-box"></div>
+    </section>
+
+    <section id="organizations">
+      <h2>🏛️ My Organizations</h2>
+      <div class="card-grid" id="org-list"></div>
+    </section>
+
+    <section id="projects">
+      <h2>🚀 My Projects</h2>
+      <div class="card-grid" id="project-list"></div>
+    </section>
+
     <section id="subjects">
       <h2>Subjects by Year</h2>
       <div class="tabs" id="year-tabs"></div>
       <div class="card-grid" id="subject-list"></div>
+    </section>
+
+    <section id="roadmap">
+      <h2>🗺️ Your 4-Year Roadmap</h2>
+      <div class="timeline" id="roadmap-list"></div>
     </section>
 
     <section id="careers">
@@ -58,9 +84,25 @@
       <div class="card-grid" id="career-list"></div>
     </section>
 
+    <section id="tools">
+      <h2>🛠️ Recommended Tools</h2>
+      <div class="card-grid" id="tool-list"></div>
+    </section>
+
+    <section id="certs">
+      <h2>🎓 Certifications to Consider</h2>
+      <p class="note">These are optional and mostly useful in your later years. Exam names, prices, and requirements change, so always check the official website before you plan for one.</p>
+      <div class="card-grid" id="cert-list"></div>
+    </section>
+
+    <section id="tips">
+      <h2>💡 Study Tips</h2>
+      <div class="card-grid" id="tip-list"></div>
+    </section>
+
     <section id="search">
       <h2>Search Computer Engineering</h2>
-      <input type="text" id="search-box" placeholder="Try: python, embedded, circuits, engineer...">
+      <input type="text" id="search-box" placeholder="Try: python, arduino, cisco, roadmap, notes...">
       <div id="search-results"></div>
     </section>
   </main>

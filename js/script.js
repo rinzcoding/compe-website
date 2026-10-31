@@ -30,10 +30,9 @@ function showYear(year) {
 showYear(1); // default view
 
 // ---------- CAREERS ----------
-const careerList = document.getElementById("career-list");
 careerList.innerHTML = careers.map(c => `
   <div class="card">
-    <h3>${c.name}</h3>
+    <h3>${c.icon} ${c.name}</h3>
     <p>${c.description}</p>
   </div>
 `).join("");
@@ -72,4 +71,23 @@ searchBox.addEventListener("input", () => {
       <p>${r.description}</p>
     </div>
   `).join("");
+});
+
+// ---------- DARK MODE ----------
+const themeToggle = document.getElementById("theme-toggle");
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+}
+
+const savedTheme = localStorage.getItem("theme");
+const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+applyTheme(savedTheme || (systemDark ? "dark" : "light"));
+
+themeToggle.addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  applyTheme(next);
+  localStorage.setItem("theme", next);
 });

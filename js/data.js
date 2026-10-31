@@ -21,12 +21,12 @@ const subjects = [
 ];
 
 const careers = [
-  { name: "Embedded Systems Engineer", description: "Builds software for devices like cars, drones, and appliances." },
-  { name: "Software Engineer", description: "Designs and develops applications and systems software." },
-  { name: "Hardware Engineer", description: "Designs processors, circuit boards, and electronic devices." },
-  { name: "Network Engineer", description: "Builds and maintains computer networks and infrastructure." },
-  { name: "Cybersecurity Analyst", description: "Protects organizations from digital threats." },
-  { name: "Robotics Engineer", description: "Combines mechanics, electronics, and software to build robots." },
-  { name: "IoT Developer", description: "Connects physical devices to the internet." },
-  { name: "AI / Machine Learning Engineer", description: "Builds systems that learn from data." }
+  { icon: "🔌", name: "Embedded Systems Engineer", description: "Builds software for devices like cars, drones, and appliances." },
+  { icon: "💻", name: "Software Engineer", description: "Designs and develops applications and systems software." },
+  { icon: "🔧", name: "Hardware Engineer", description: "Designs processors, circuit boards, and electronic devices." },
+  { icon: "🌐", name: "Network Engineer", description: "Builds and maintains computer networks and infrastructure." },
+  { icon: "🛡️", name: "Cybersecurity Analyst", description: "Protects organizations from digital threats." },
+  { icon: "🤖", name: "Robotics Engineer", description: "Combines mechanics, electronics, and software to build robots." },
+  { icon: "📡", name: "IoT Developer", description: "Connects physical devices to the internet." },
+  { icon: "🧠", name: "AI / Machine Learning Engineer", description: "Builds systems that learn from data." }
 ];

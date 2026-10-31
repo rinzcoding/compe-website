@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Engineering Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Computer Engineering Guide</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#careers">Careers</a>
+      <a href="#search">Search</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>What is Computer Engineering?</h2>
+      <p>
+        Computer Engineering combines electrical engineering and computer science.
+        You learn how to design hardware (circuits, processors, embedded systems)
+        and the software that runs on it.
+      </p>
+    </section>
+
+    <section id="subjects">
+      <h2>Subjects by Year</h2>
+      <div class="tabs" id="year-tabs"></div>
+      <div class="card-grid" id="subject-list"></div>
+    </section>
+
+    <section id="careers">
+      <h2>Future Careers</h2>
+      <div class="card-grid" id="career-list"></div>
+    </section>
+
+    <section id="search">
+      <h2>Search Computer Engineering</h2>
+      <input type="text" id="search-box" placeholder="Try: python, embedded, circuits, engineer...">
+      <div id="search-results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by a first-year Computer Engineering student</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
